@@ -2,13 +2,13 @@
   "name": "express-chat-app-api",
   "version": "1.0.0",
   "description": "Web Chat Nibiru",
-  "main": "index.js",
+  "main": "server.js",
   "engines": {
     "node": "16.x"
   },
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "keywords": [
     "ExpressJS",
