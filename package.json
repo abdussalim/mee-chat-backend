@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Web Chat Nibiru",
   "main": "index.js",
-  "engine": "16.x",
+  "engines": "16.x",
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js"
