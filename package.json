@@ -4,9 +4,11 @@
   "description": "Mee Chat App",
   "main": "index.js",
   "engines": {
-    "node": "12.10.0"
+    "node": "16.16.0",
+    "npm": "8.11.0"
   },
   "scripts": {
+    "dev": "nodemon index.js",
     "start": "node index.js"
   },
   "keywords": [
