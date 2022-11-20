@@ -50,11 +50,11 @@ io.on("connection", (socket) => {
   socketController(io, socket);
 });
 
-const port = process.env.PORT || PORT;
+const port = process.env.PORT || 5000;
 
 // running server
 server.listen(port, () => {
-  console.log(`Server started on port ${PORT} with ${NODE_ENV} environment`);
-  console.log(`Visit http://localhost:${PORT}`);
+  console.log(`Server started on port ${port} with ${NODE_ENV} environment`);
+  console.log(`Visit http://localhost:${port}`);
   console.log("Developed by Abdus Salim");
 });
