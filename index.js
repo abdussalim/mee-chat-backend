@@ -21,7 +21,7 @@ app.use(
 );
 app.use(xss());
 app.use(cors());
-app.use(express.static("public"));
+app.use(express.static("./public"));
 
 // root router
 app.get("/", (req, res) =>
