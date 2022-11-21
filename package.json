@@ -19,7 +19,6 @@
   "author": "Abdus Salim",
   "license": "MIT",
   "dependencies": {
-    "@popperjs/core": "^2.11.6",
     "aws-sdk": "^2.1258.0",
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
