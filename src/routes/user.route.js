@@ -14,7 +14,7 @@ const {
 const router = express.Router();
 
 router
-  .get("/user", jwtAuth, list)
+  .get("/user", list)
   .get("/user/:id", jwtAuth, detail)
   .put(
     "/user/:id",
