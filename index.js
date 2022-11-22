@@ -20,12 +20,16 @@ app.use(
 );
 app.use(
   helmet({
-    crossOriginEmbedderPolicy: false,
-    crossOriginResourcePolicy: false,
+    crossOriginEmbedderPolicy: true,
+    crossOriginResourcePolicy: true,
   })
 );
 app.use(xss());
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 app.use(express.static("./public"));
 
 // root router
