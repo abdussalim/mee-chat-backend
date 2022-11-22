@@ -20,8 +20,8 @@ app.use(
 );
 app.use(
   helmet({
-    crossOriginEmbedderPolicy: true,
-    crossOriginResourcePolicy: true,
+    crossOriginEmbedderPolicy: false,
+    crossOriginResourcePolicy: false,
   })
 );
 app.use(xss());
