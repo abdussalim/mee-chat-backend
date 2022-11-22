@@ -2,7 +2,7 @@ const db = require("../config/db");
 
 module.exports = {
   login: (is_online, email) =>
-    new Promise(() => {
+    new Promise((resolve, reject) => {
       db.query(
         "UPDATE users SET is_online=$1 WHERE email=$2",
         [is_online, email],
@@ -16,7 +16,7 @@ module.exports = {
     }),
 
   logout: (is_online, email) =>
-    new Promise(() => {
+    new Promise((resolve, reject) => {
       db.query(
         "UPDATE users SET is_online=$1 WHERE email=$2",
         [is_online, email],

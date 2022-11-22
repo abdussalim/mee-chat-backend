@@ -94,9 +94,11 @@ module.exports = {
       const { email, password } = req.body;
       const user = await userModel.findBy("email", email);
 
+      console.log(user.rowCount);
       // jika user ditemukan
       if (user.rowCount > 0) {
         const match = await bcrypt.compare(password, user.rows[0].password);
+
         // jika password benar
         if (match) {
           const jwt = await jwtToken({
