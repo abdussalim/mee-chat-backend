@@ -50,6 +50,7 @@ app.use((req, res) => {
 
 const server = http.createServer(app);
 const io = socketIo(server, {
+  transform: ["polling", "websocket"],
   cors: {
     origin: "*",
   },
