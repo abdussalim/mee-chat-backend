@@ -22,7 +22,7 @@ const uploadGoogleDrive = async (file) => {
       requestBody: {
         name: file.filename,
         mimeType: file.mimetype,
-        // parents: ["1yLZDBHqR2NyYoVi772ikSnhQ11I4Ssg7"],
+        parents: ["1zxWSXjnkN5kpP_OlVrxarqdXk3eyRqQN"],
       },
       media: {
         mimeType: file.mimetype,
